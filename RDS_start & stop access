@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "rds:ListTagsForResource",
+                "rds:StopDBInstance",
+                "rds:StartDBInstance"
+            ],
+            "Resource": "arn:aws:rds:*:249190020178:db:database-1"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "rds:DescribeDBInstances",
+            "Resource": "*"
+        }
+    ]
+}
